@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link href="../css/Style.css" rel="stylesheet" type="text/css">
+    
+    <title>Registrar Apertura</title>
+
+</head>
+<body>
+    <div class="PanelContenedor bg-light m-2 rounded" >
+        <div class="PanelHeaderContenedor mb-5">
+            <span class="title-PanelHeaderContenedor">Registrar Apertura</span>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="txtIdApertura" >Id Apertura</label>
+                <input type="text" class="form-control" id="txtIdApertura" > 
+            </div>
+            <div class="form-group">
+                <label for="txtFechaInicioApertura" >Fecha Inicio Apertura</label>
+                <input type="date" class="form-control" id="txtFechaInicioApertura">
+            </div>
+            <div class="form-group">
+                <label for="txtFechaFinApertura" >Fecha Fin Apertura</label>
+                <input type="date" class="form-control" id="txtFechaFinApertura">
+            </div>
+            <div class="form-group">
+                <label for="cboEstadoApertura" >Estado Apertura</label>
+                <select class="form-control" id="cboEstadoApertura" >
+                    <option value="1" selected>Abierta</option>
+                    <option value="2">Cerrada</option>
+                </select>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="chkSincronizado" >
+                <label for="chkSincronizado" class="form-check-label" >Sincronizado</label>
+            </div>
+            <button type="button" class="btn btn-primary" id="btnSave"
+                onclick="registrarApertura()">Save</button>
+            
+            <div id="divAlert" class="alert alert-success" role="alert" >
+                <span class="d-block text-right" onclick="this.parentElement.style.display='none';">&times;</span>
+                <span id="spMsg">Reg</span>                                                           
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript" src="../scripts/RegistrarApertura.js" ></script>    
+</body>
+</html>

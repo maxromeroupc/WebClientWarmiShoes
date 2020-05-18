@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/Style.css" type="text/css">
+    <script type="text/javascript" src="scripts/Login.js" ></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="Panelheader">
+        <span>SISTEMA DE GESTIÓN DE TIENDAS</span>
+    </div>
+
+    <div class="bg-light m-2 rounded">
+        <div class="row align-items-center justify-content-center vh-100">
+
+            <form class="border 0 rounded p-4">
+                <div class="form-group">
+                    <label for="txtUsuario" class="font-weight-bold">Usuario</label>
+                    <input type="text" class="form-control" id="txtUsuario">
+                </div>
+                <div class="form-group">
+                    <label for="txtClave" class="font-weight-bold">Contraseña</label>
+                    <input type="password" id="txtClave" class="form-control">
+                    <small id="ClaveHelp" class="form-text text-muted">Por favor proteja su contraseña.</small>
+                </div>
+                <div class="row justify-content-center mb-3">
+                    <button type="button" class="btn btn-primary mr-1" id="btnIniciar" onclick="mostrarDatos()">Iniciar</button>
+                    <button type="button" class="btn btn-primary ml-1" id="btnCancelar">Cancelar</button>
+                </div>                
+                <div id="divAlert" role="alert" style="display: none;" >
+                    <span class="d-block text-right" onclick="this.parentElement.style.display='none';">&times;</span>
+                    <span id="spMsg"></span>                                                           
+                </div>
+                
+            </form>
+            
+        </div>
+    </div>
+
+
+</body>
+
+</html>

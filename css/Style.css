@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+background-color: gray; 
+}
+
+.Panelheader{
+    background-color: rgb(82, 33, 33);
+    color: white;
+    display: flex;
+    align-items: center;
+    /*    width: 100%;*/
+    height: 60px;    
+    font-size: 35px;
+    /*border: 3px solid;*/
+}
+
+/*formato de la imagen del menú*/
+.nav-brand{
+    width: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav-main{
+    font-size: 17px;    
+    width: 100%;
+    text-align: right;
+    padding-top: 20px;
+    /*border: 1px dotted;    */
+}
+
+.nav-main ul{
+    list-style: none;
+}
+
+.nav-menu{        
+    color: aqua;
+    display: inline-flex;
+    /*border:2px dashed;*/    
+}
+
+.nav-menu li:hover .nav-submenu{   
+    display: block;     
+}
+
+.nav-submenu{
+    background-color: rgb(82, 33, 33);    
+    position: absolute;        
+    display: none;    
+    border: 1px solid rgb(82, 33, 33);    
+}
+
+.nav-main ul li a:hover{
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.nav-main ul li .nav-menu{
+    display: flex;
+    margin-left: 20px;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-main ul li{
+    padding: 10px;
+}
+
+
+.PanelContenedor{
+    background-image: url("../images/zapato_beige_12_1280_854.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    background-color: white;
+    height: 90vh ;    
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+    /* centrar     
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+    
+        
+    */    
+    }
+
+.saludo{
+    text-align: center;    
+    font-size: 40px;    
+    font-weight: bold;
+    
+}
+
+    
+.title-PanelHeaderContenedor{
+color: white;    
+font: bold 20px helvetica,arial,verdana,sans-serif;
+}
+
+.title{
+color: cornflowerblue;
+font-weight: bold;    
+font: normal 20px helvetica,arial,verdana,sans-serif;
+}
+
+.PanelHeaderContenedor{
+    background-color: #7E7E7E;        
+    text-align:center;
+    height: 40px;
+    padding: 10px;
+    border-radius: 0.5em;
+    margin-bottom: 20px;
+    
+}
+
+/* The alert message box
+.alert {
+padding: 20px;
+background-color: #f44336; 
+color: white;
+margin-bottom: 15px;
+}
+*/
+/* The close button */
+.closebtn {
+margin-left: 15px;
+color: white;
+font-weight: bold;
+float: right;
+font-size: 22px;
+line-height: 20px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+color: black;
+}
+
